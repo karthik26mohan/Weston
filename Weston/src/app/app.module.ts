@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ExpensesComponent } from './expenses/expenses.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { ExpensesComponent } from './expenses/expenses.component';
     ExpensesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
